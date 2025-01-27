@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "nonebot-plugin-bot-tap"
+version = "0.0.1"
+description = "在 NoneBot 中管理你的 NoneBot 吧！"
+authors = ["【夜风】NightWind <2125714976@qq.com>"]
+license = "GPL3"
+readme = "README.md"
+packages = [{include = "nonebot_plugin_bot_tap"}]
+homepage = "https://github.com/NonebotGUI/nonebot-plugin-bot-tap"
+repository = "https://github.com/NonebotGUI/nonebot-plugin-bot-tap"
+documentation = "https://github.com/NonebotGUI/nonebot-plugin-bot-tap#README.md"
+
+include = [
+    "nonebot_plugin_bot_tap/NotoSerifSC-Regular.otf"
+]
+
+[[tool.poetry.source]]
+name = "tsinghua"
+url = "https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple/"
+default = true
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+nonebot2 = ">=2.3.0,<3.0.0"
+httpx = ">=0.22.0"
+nonebot-adapter-onebot = ">=2.3.0"
+pillow = ">=11.1.0"
+nonebot-plugin-send-anything-anywhere = ">=0.7.1"
+nonebot_plugin_session = ">=0.3.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
