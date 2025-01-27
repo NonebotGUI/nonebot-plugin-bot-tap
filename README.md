@@ -24,7 +24,7 @@ _✨ 在 NoneBot 中管理你的 NoneBot 吧！ ✨_
 
 ## 📖 介绍
 
-基于 (NoneBot Agent)[https://github.com/NonebotGUI/nonebot-agent]的 NoneBot 插件，用于管理 NoneBot 机器人。
+基于 [NoneBot Agent](https://github.com/NonebotGUI/nonebot-agent)的 NoneBot 插件，用于管理 NoneBot 机器人。
 
 ## 💿 安装
 
@@ -85,7 +85,7 @@ _✨ 在 NoneBot 中管理你的 NoneBot 吧！ ✨_
 
 ## 使用前请先配置好 Agent 端
 
-点[这里](https://webui.nbgui.top/config/nba.html)查看配置方法，配置完成后可手动创建文件进行导入，也可以通过部署 (NoneBot WebUI)[https://webui.nbgui.top/config/dashboard.html] 后快速导入，或者使用插件命令进行导入。
+点[这里](https://webui.nbgui.top/config/nba.html)查看配置方法，配置完成后可手动创建文件进行导入，也可以通过部署 [NoneBot WebUI](https://webui.nbgui.top/config/dashboard.html) 后快速导入，或者使用插件命令进行导入。
 
 如果你想通过手动创建文件导入，请按照以下格式创建文件：
 
