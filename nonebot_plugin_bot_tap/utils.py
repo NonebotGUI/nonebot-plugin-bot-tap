@@ -73,6 +73,5 @@ def draw_img(text, font_path, font_size):
     buffered = BytesIO()
     image.save(buffered, format="PNG")
     buffered.seek(0)
-    image.save('log.png')
 
     return buffered
