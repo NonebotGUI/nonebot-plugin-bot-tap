@@ -21,7 +21,7 @@ __plugin_meta__ = PluginMetadata(
     type="application",
     homepage="https://github.com/NonebotGUI/nonebot-plugin-bot-tap",
     config=Config,
-    supported_adapters=inherit_supported_adapters("nonebot_plugin_session"),
+    supported_adapters=inherit_supported_adapters("nonebot_plugin_session", "nonebot_plugin_saa"),
 )
 
 
