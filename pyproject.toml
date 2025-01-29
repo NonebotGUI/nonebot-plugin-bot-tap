@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nonebot-plugin-bot-tap"
-version = "0.0.1"
+version = "0.0.2"
 description = "在 NoneBot 中管理你的 NoneBot 吧！"
 authors = ["【夜风】NightWind <2125714976@qq.com>"]
 license = "GPL3"
