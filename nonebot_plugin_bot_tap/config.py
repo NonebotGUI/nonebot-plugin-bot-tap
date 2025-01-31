@@ -17,7 +17,7 @@ class Config(BaseModel):
 
     # 字体文件路径
     bot_tap_font_path: str = str(
-        path.join(path.dirname(path.abspath(__file__)), "NotoSerifSC-Regular.otf")
+        path.join(path.dirname(path.abspath(__file__)), "Microsoft_YaHei_Consolas_Regular.ttf")
     )
 
     # 字体大小

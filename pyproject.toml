@@ -11,7 +11,7 @@ repository = "https://github.com/NonebotGUI/nonebot-plugin-bot-tap"
 documentation = "https://github.com/NonebotGUI/nonebot-plugin-bot-tap#README.md"
 
 include = [
-    "nonebot_plugin_bot_tap/NotoSerifSC-Regular.otf"
+    "nonebot_plugin_bot_tap/Microsoft_YaHei_Consolas_Regular.ttf"
 ]
 
 [[tool.poetry.source]]
