@@ -12,10 +12,10 @@ _✨ 在 NoneBot 中管理你的 NoneBot 吧！ ✨_
 
 
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/owner/nonebot-plugin-bot-tap.svg" alt="license">
+    <img src="https://img.shields.io/github/license/NonebotGUI/nonebot-plugin-bot-tap.svg" alt="license">
 </a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-template">
-    <img src="https://img.shields.io/pypi/v/nonebot-plugin-template.svg" alt="pypi">
+<a href="https://pypi.python.org/pypi/nonebot-plugin-bot-tap.svg">
+    <img src="https://img.shields.io/pypi/v/nonebot-plugin-bot-tap.svg" alt="pypi">
 </a>
 <img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
 
