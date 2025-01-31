@@ -77,7 +77,7 @@ _✨ 在 NoneBot 中管理你的 NoneBot 吧！ ✨_
 | bot_tap_admin | 是 | list | [] | 权限组 |
 | bot_tap_host | 否 | str | http://127.0.0.1 | 连接到Agent端的主机地址 |
 | bot_tap_port | 否 | int | 2519 | 连接到Agent端的端口 |
-| bot_tap_font_path | 否 | str | 自带的NotoSerifSC-Regular.otf | 字体文件路径 |
+| bot_tap_font_path | 否 | str | 自带的Microsoft_YaHei_Consolas_Regular.ttf | 字体文件路径 |
 | bot_tap_font_size | 否 | int | 18 | 字体大小 |
 
 > [!NOTE]
