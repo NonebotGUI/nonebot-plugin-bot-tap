@@ -31,7 +31,21 @@ def get_color_for_match(match):
 
 def draw_img(text, font_path, font_size):
     font = ImageFont.truetype(font_path, font_size)
-    lines = text.split('\n')
+    max_width = 1765
+    lines = []
+
+    for paragraph in text.split('\n'):
+        words = paragraph.split(' ')
+        line = ''
+        for word in words:
+            test_line = f'{line} {word}'.strip()
+            if font.getlength(test_line) <= max_width:
+                line = test_line
+            else:
+                lines.append(line)
+                line = word
+        lines.append(line)
+
     line_count = len(lines)
 
     # 获取字体的行高
@@ -40,9 +54,7 @@ def draw_img(text, font_path, font_size):
     line_height += 3
     # 获取画布需要的高度
     height = line_height * line_count + 20
-    # 获取画布需要的宽度
-    width = int(max([font.getlength(line) for line in lines])) + 25
-    image = Image.new('RGBA', (width, height), (31, 28, 28, 255))
+    image = Image.new('RGBA', (max_width, height), (31, 28, 28, 255))
     draw = ImageDraw.Draw(image)
 
     regex = re.compile(r'(\[[A-Z]+\])|(nonebot \|)|(uvicorn \|)|(Env: dev)|(Env: prod)|(Config)|(nonebot_plugin_[\S]+)|("nonebot_plugin_[\S]+)|(使用 Python: [\S]+)|(Using python: [\S]+)|(Loaded adapters: [\S]+)|(\d{2}-\d{2} \d{2}:\d{2}:\d{2})|(Calling API [\S]+)')
