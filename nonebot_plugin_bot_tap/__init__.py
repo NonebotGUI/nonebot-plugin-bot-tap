@@ -136,7 +136,7 @@ async def handle(uid: str = SessionId(SessionIdType.USER), id: Message = Command
             await Text("无效的ID，请检查后重试").finish(reply=True)
         bot = bot_list[id - 1]
         id = bot["id"]
-        r = await client.post(f"{host}:{port}/nbgui/v1/bot/run/{id}", headers={"Authorization": f"Bearer {token}"})
+        r = await client.get(f"{host}:{port}/nbgui/v1/bot/run/{id}", headers={"Authorization": f"Bearer {token}"})
         await Text("Bot 已启动").finish(reply=True)
 
 
@@ -152,7 +152,7 @@ async def handle(uid: str = SessionId(SessionIdType.USER), id: Message = Command
             await Text("无效的ID，请检查后重试").finish(reply=True)
         bot = bot_list[id - 1]
         id = bot["id"]
-        r = await client.post(f"{host}:{port}/nbgui/v1/bot/stop/{id}", headers={"Authorization": f"Bearer {token}"})
+        r = await client.get(f"{host}:{port}/nbgui/v1/bot/stop/{id}", headers={"Authorization": f"Bearer {token}"})
         await Text("Bot 已停止").finish(reply=True)
 
 
@@ -168,7 +168,7 @@ async def handle(uid: str = SessionId(SessionIdType.USER), id: Message = Command
             await Text("无效的ID，请检查后重试").finish(reply=True)
         bot = bot_list[id - 1]
         id = bot["id"]
-        r = await client.post(f"{host}:{port}/nbgui/v1/bot/restart/{id}", headers={"Authorization": f"Bearer {token}"})
+        r = await client.get(f"{host}:{port}/nbgui/v1/bot/restart/{id}", headers={"Authorization": f"Bearer {token}"})
         await Text("Bot 已重启").finish(reply=True)
 
 @bot_tab_status.handle()
